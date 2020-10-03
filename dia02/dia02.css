@@ -1,0 +1,38 @@
+@keyframes example{
+   0%{
+       transform: rotate(0deg);
+   }
+   100%{
+       transform: rotate(360deg);
+   }
+}
+
+.div1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.div2 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    color: blueviolet;
+    text-align: center;
+    line-height: 500px;
+    box-shadow: 0 0 15px rgb(233, 159, 151);
+   
+}
+.div3{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 red;
+    background: transparent;
+    animation: example 0.8s  linear infinite;
+    
+
+}
