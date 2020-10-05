@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 300px;
+    display: flex;
+    /* ajusta para o botão ficar centralizado horizontal e vertical */
+    align-items: center;
+    justify-content: center;
+}
+.b1{
+    width: 200px;
+    height: 60px;
+    background: black;
+    border: 10px solid deeppink;
+    color: deeppink;
+    font-weight: bolder ;
+    
+    text-transform: uppercase;
+    /* muda a forma do cursor */
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+.b1::before, .b1::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:black;
+    transform: skewX(50deg) ;
+    transition: .4s linear;
+}
+.b1::before{
+    top:-10px;
+    left: 10%;
+}
+.b1::after{
+    bottom: -10px;
+    right: 10%;
+}
+.b1:hover::before{
+    left: 80%;
+}
+.b1:hover::after{
+    right: 80%;
+}
