@@ -1,0 +1,53 @@
+@keyframes example{
+    0%{
+        
+        transform: translateX(0);
+    }
+    100%{
+      
+        transform: translateX(-100%);
+    }
+
+}
+/* seção que armazena as div, a posição "relative" faz com que tenha a sobreposição das letras(muda de cor) */
+section{
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    overflow: hidden;
+    position: relative;
+    display: flex;
+   
+}
+/* segunda div  */
+section div {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color:rgba(0, 0, 0, 0.664);
+    overflow: hidden;
+    
+               
+  }
+/* div 1 configuração */
+section div:nth-child(1)  {
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+    position: relative;
+    overflow: hidden;
+    
+       
+  }
+/* cor da letra quando entra na div 1 */
+  section div:nth-child(1) h1{
+      color: yellow;
+      left:100%;
+  }
+  /* cor da letra da div 2,configuração da letra e animação */
+ section div h1{
+    position: absolute;
+    font-size: 30px;
+    white-space: nowrap;
+    line-height: 9rem;
+    color:white;
+    animation: example 15s infinite linear;
+  }
