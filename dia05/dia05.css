@@ -1,0 +1,48 @@
+body{
+    background-image:url(./assets/ceu.jpg);
+    /* display: flex; */
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes animation{
+
+        0%
+        {
+            box-shadow: 0 0 0 0  rgba(192, 192, 192, 0.7),0 0 0 0 rgba(192, 192, 192, 0.7);
+        }
+        40%
+        {
+            box-shadow: 0 0 0 50px rgba(192, 192, 192, 0),0 0 0 0px rgba(192, 192, 192, 0.7);
+        }
+        80%
+        {
+            box-shadow: 0 0 0 50px rgba(192, 192, 192, 0),0 0 0 30px rgba(192, 192, 192, 0);
+        }
+        100%
+        {
+            box-shadow: 0 0 0 0 rgba(192, 192, 192, 0),0 0 0 30px  rgba(192, 192, 192, 0);        
+        }
+}
+div:nth-child(1) img{
+    
+    top: 50%;
+    left: 39.5%;
+    position: absolute;
+    width: 170px;
+    height: 100px;
+}
+div:nth-child(2){
+    width: 119px;
+    height: 100px;
+    top: 50%;
+    left:41%;
+    position: absolute;
+    border-radius: 50%;
+    color:#dcdcdc;
+    line-height: 50px;
+    animation: animation 3s  linear infinite;
+
+}
