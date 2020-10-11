@@ -1,0 +1,26 @@
+body{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+
+span::before{
+    content: '';
+    animation: words 5s linear infinite;
+}
+
+@keyframes words{
+    0%{content: '💻';}
+    25%{content:'🐱';}
+    50%{content:'🐶';}
+    100%{content:'🎹';}
+}
