@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: rgba(255, 20, 145, 0.267);
+    font-size:50px ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+}
+h1::before{
+    content: '#30diasCSS';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: deeppink;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+h1:hover::before{
+    width: 100%;
+}
