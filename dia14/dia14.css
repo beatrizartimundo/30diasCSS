@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    background-color: black
+}
+h1{
+    font-family: 'Lato',sans-serif;
+    
+    font-size: 200px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: url("./assets/estrelas.jpg");
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text-background 5s linear infinite;
+    
+}
+
+@keyframes text-background{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
