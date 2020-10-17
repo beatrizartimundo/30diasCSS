@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+
+
+}
+button{
+    background: deepskyblue;
+    border: 15px solid deepskyblue;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+button::before{
+    content: '✔️ Dia 16';
+    color: skyblue;
+    background-color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+}
+
+button:hover:before {
+	transform: translateY(0);
+}
