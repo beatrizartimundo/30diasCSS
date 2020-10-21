@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+/* ?? */
+.brilhos{
+    position: relative;
+    min-width: 750px;
+    height: 750;
+    margin: -150px;
+    transform-origin: right;
+    animation: cores 5s linear infinite
+}
+@keyframes cores{
+    0%{
+        /* brilho de cada bolinha */
+        filter:  hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+ }
+.brilhos:nth-child(even){
+    transform-origin: right;
+}
+ /* faz o calculo de cada posicao e aplica na variavel que foi add no HTML */
+.brilhos span{
+    position: absolute;
+    top:calc(80px * var(--a));
+    left:calc(80px * var(--a));
+    bottom:calc(80px * var(--a));
+    right:calc(80px * var(--a));
+
+} 
+/* cores que são distribuidas para que cada bolinha fique em cores e posições diferentes */
+.brilhos span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    background: #ff0000;
+    border-radius: 50%;
+}
+.brilhos span:nth-child(3n + 1):before
+{
+    background: rgba(255, 20, 145, 1);
+    box-shadow: 0 0 30px  rgba(255, 20, 145, 1),
+                0 0 60px  rgba(255, 20, 145, 1),
+                0 0 90px  rgba(255, 20, 145, 1),
+                0 0 120px  rgba(255, 20, 145, 1),
+                0 0 0 8px  rgba(255, 20, 145, .5);
+}
+.brilhos span:nth-child(3n + 2):before
+{
+    background: rgba(0, 191, 255,1);
+    box-shadow: 0 0 30px rgba(0, 191, 255,1),
+                0 0 60px rgba(0, 191, 255,1),
+                0 0 90px rgba(0, 191, 255,1),
+                0 0 120px rgba(0, 191, 255,1),
+                0 0 0 8px rgba(0, 191, 255,.5);
+}
+.brilhos span:nth-child(3n + 3):before
+{
+    background: rgba(102, 51, 153, 1);
+    box-shadow: 0 0 30px rgba(102, 51, 153, 1),
+                0 0 60px rgba(102, 51, 153, 1),
+                0 0 90px rgba(102, 51, 153, 1),
+                0 0 120px rgba(102, 51, 153, 1),
+                0 0 0 8px rgba(102, 51, 153, .5);
+}
+.brilhos span:nth-child(3n+1)
+{
+    animation: animate 5s alternate infinite;
+}
+.brilhos span:nth-child(3n+2)
+{
+    animation: animate-reverse 3s alternate infinite;
+}
+.brilhos span:nth-child(3n+3)
+{
+    animation: animate 5s alternate infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-reverse
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+} 

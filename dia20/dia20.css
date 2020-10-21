@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+}
+a 
+{
+	text-decoration: none;
+	color: silver;
+	font-family: sans-serif;
+	font-size: 20px;
+	border: 3px solid silver;
+	padding: 30px 70px;
+	transition: all 1s;
+	position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+a:hover 
+{
+	background-color: gray;
+}
+
+a:before 
+{
+	content: '';
+	background-color: silver;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	transform: translateX(-100%) rotate(60deg);
+	transition: all 1s;
+}
+
+a:hover::before 
+{
+ 	transform: translateX(100%) rotate(60deg);
+}
