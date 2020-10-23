@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    border: 4px dashed white;
+    padding: 40px 80px;
+    transition: all 0.3s;
+}
+
+a:hover{
+    border: 3px solid dodgerblue;
+    color: white;
+    animation:  shake 0.3s linear  1;
+}
+
+@keyframes shake{
+    33%{
+        transform: rotate(10deg);
+    }
+    66%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
