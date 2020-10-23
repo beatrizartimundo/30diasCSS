@@ -23,6 +23,7 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 ul li i{
     font-size: 48px;
@@ -60,6 +61,7 @@ ul li::after{
     opacity: 0;
     z-index: -1;
     box-sizing: border-box;
+    
 
 }
 ul li:hover::after{
