@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #18191f;
+}
+
+ul {
+   display: flex;
+   }
+
+ul li {
+    list-style: none;
+}
+/* tira o marcado de checkbox */
+label input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+ul li label {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    color: #555;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    overflow: hidden;
+    
+}
+ul li label:before
+{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: rgba(255,255,255,0.05);
+}
+
+ul li label input[type="checkbox"]:checked ~ i.fa{
+    color: deeppink;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
