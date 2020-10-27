@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(100, 148, 237, 0.616);
+}
+.loader{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+/* cria cada circulo  */
+.loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+/* cria o efeito do circulo */
+.loader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+    animation: fly 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+/* animação do circulo */
+@keyframes fly{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1.2);
+    }
+    80%,100%{
+        transform: scale(0);
+    }
+}
+/* alinha a div define a animação */
+.plane{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotating 2s linear infinite;
+    animation-delay: -1s;
+}
+/* animação do avião */
+@keyframes rotating{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(370deg);
+    }
+}
+/* define o que vai ser exibido,cores,tamanho e faz a rotação */
+.plane::before{
+    content: '\f072';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 80px;
+    left: 85px;
+    color: whitesmoke;
+    font-size: 60px;
+    transform: rotate(180deg);
+
+}
