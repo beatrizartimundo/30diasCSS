@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.596);
+}
+/* deixa os cards lado a lado */
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+/* tamanho dos cards */
+.container .box{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #cccccc;
+    transition: 0.5s;
+}
+/* efeito hover dos cards */
+.container .box:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+}
+.container .box .thumb{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.container .box:nth-child(odd) .thumb{
+
+    bottom: 0;
+    left: 0;
+}
+
+
+.container .box .thumb img{
+    width: 100%;
+
+}
+.container .box .details{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #262626;
+}
+/* cores dos cards */
+.container .box:nth-child(even) .details{
+    bottom: 0;
+    left: 0;
+}
+.container .box:nth-child(1) .details{
+    background: rgb(24, 235, 235);
+}
+.container .box:nth-child(2) .details{
+    background: rebeccapurple;
+}
+.container .box:nth-child(3) .details{
+    background: rgb(131, 206, 19);
+}
+.container .box:nth-child(4) .details{
+    background: orange;
+}
+
+.container .box .details .content{
+    position: absolute;
+    top:calc(50% + 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+/* movimentação do conteudo */
+.container .box .details .content{
+    top: calc(50%);
+}
+
+
+.container .box .details .content .fa{
+    font-size: 80px;
+    color: white;
+}
+.container .box .details .content h3{
+    margin: 0;
+    
+    padding: 10px 0;
+    color: white;
+}
+.container .box .details .content a{
+    display: inline-block;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform:scale(0);
+}
+.container .box:hover .details .content a{
+    transform:scale(1);
+}
+
+.container .box .details .content a:hover{
+    background: white;
+    color: #262626;
+}
+/* responsividade */
+@media (max-width:1050px){
+    
+    .container{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .container .box{
+        height: 250px;
+    }
+    .container .box .thumb{
+        display: none;
+    }
+
+}
+@media(max-width:758px){
+    .container{
+        display: initial;
+    }
+    .container .box{
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+
+}
+@media(max-width:480px){
+    .container{
+        top:0;
+        left: 0;
+        transform: translate(0);    
+    }
+    .container .box{
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+
+}
