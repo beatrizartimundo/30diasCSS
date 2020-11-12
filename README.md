@@ -51,7 +51,7 @@ Dia 9 - Pendulo de Newton
 
  Dia 11 - Botão com efeito hover
 
-<img width="400" height="200" src="./dia11/assets/Dia11CSS.gif">
+<img width="400" height="200" src="./dia11/assets/dia11CSS.gif">
 
  Dia 12 - Efeito de preenchimento ao passar o mouse
 
@@ -68,7 +68,7 @@ Dia 9 - Pendulo de Newton
 
  Dia 15 - Texto flutuante
 
-<img width="400" height="200" src="./dia15/assets/Dia15CSS.gif">
+<img width="400" height="200" src="./dia15/assets/dia15CSS.gif">
 
 Dia 16 - Botão com efeito
 
@@ -77,35 +77,35 @@ Dia 16 - Botão com efeito
 
  Dia 17 - Loader animado
 
-<img width="400" height="200" src="./dia17/assets/dia17CSS.gif">
+<img width="400" height="200" src="./dia17/assets/Dia17CSS.gif">
 
  Dia 18 - Texto esfumaçado
 
-<img width="400" height="200" src="./dia18/assets/dia18CSS.gif">
+<img width="400" height="200" src="./dia18/assets/Dia18CSS.gif">
 
 Dia 19 - Efeitos de animação de fundo de partículas
 
-<img width="400" height="200" src="./dia19/assets/dia19CSS.gif">
+<img width="400" height="200" src="./dia19/assets/Dia19CSS.gif">
 
  Dia 20 - Botão com efeito
 
-<img width="400" height="200" src="./dia20/assets/dia20CSS.gif">
+<img width="400" height="200" src="./dia20/assets/Dia20CSS.gif">
 
 Dia 21 - Esferas quicando
 
-<img width="400" height="200" src="./dia21/assets/dia21CSS.gif">
+<img width="400" height="200" src="./dia21/assets/Dia21CSS.gif">
 
 Dia 22 - Icones com efeito
 
-<img width="400" height="150" src="./dia22/assets/dia22CSS.gif">
+<img width="400" height="150" src="./dia22/assets/Dia22CSS.gif">
 
 Dia 23 - Botão com efeito hover
 
-<img width="400" height="200" src="./dia23/assets/dia23CSS.gif">
+<img width="400" height="200" src="./dia23/assets/Dia23CSS.gif">
 
 Dia 24 - Preloader animado
 
-<img width="400" height="200" src="./dia24/assets/dia24CSS.gif">
+<img width="400" height="200" src="./dia24/assets/Dia24CSS.gif">
 
 Dia 25 - Checkbox animado
 
@@ -113,7 +113,7 @@ Dia 25 - Checkbox animado
 
 Dia 26 - Loading com efeito
 
-<img width="400" height="200" src="./dia26/assets/dia26CSS.gif">
+<img width="400" height="200" src="./dia26/assets/Dia26CSS.gif">
 
 Dia 27 - Efeito pulsar
 
@@ -121,12 +121,12 @@ Dia 27 - Efeito pulsar
 
 Dia 28 - Cor do background mudando
 
-<img width="400" height="200" src="./dia28/assets/dia28CSS.gif">
+<img width="400" height="200" src="./dia28/assets/Dia28CSS.gif">
 
 Dia 29 - Menu responsivo com Media Queries
 
-<img width="400" height="200" src="./dia29/assets/img/dia29CSS.gif">
+<img width="400" height="200" src="./dia29/assets/img/Dia29CSS.gif">
 
 Dia 30 - Fogos de artificio
 
-<img width="400" height="200" src="./dia30/assets/dia30CSS.gif">
+<img width="400" height="200" src="./dia30/assets/Dia30CSS.gif">
