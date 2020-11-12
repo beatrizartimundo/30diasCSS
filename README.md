@@ -109,7 +109,7 @@ Dia 24 - Preloader animado
 
 Dia 25 - Checkbox animado
 
-<img width="400" height="200" src="./dia25/assets/dia25CSS.gif">
+<img width="400" height="200" src="./dia25/assets/Dia25CSS.gif">
 
 Dia 26 - Loading com efeito
 
@@ -117,7 +117,7 @@ Dia 26 - Loading com efeito
 
 Dia 27 - Efeito pulsar
 
-<img width="400" height="200" src="./dia27/assets/dia27CSS.gif">
+<img width="400" height="200" src="./dia27/assets/Dia27CSS.gif">
 
 Dia 28 - Cor do background mudando
 
